@@ -21,39 +21,39 @@ Pod::Spec.new do |s|
 #define _AFNETWORKING_PIN_SSL_CERTIFICATES_
 
   s.subspec 'Serialization' do |ss|
-    ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
+    ss.source_files = 'AFNetworking-OpenTable/AFURL{Request,Response}Serialization.{h,m}'
     ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.osx.frameworks = 'CoreServices'
   end
 
   s.subspec 'Security' do |ss|
-    ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
+    ss.source_files = 'AFNetworking-OpenTable/AFSecurityPolicy.{h,m}'
     ss.frameworks = 'Security'
   end
 
   s.subspec 'Reachability' do |ss|
-    ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
+    ss.source_files = 'AFNetworking-OpenTable/AFNetworkReachabilityManager.{h,m}'
     ss.frameworks = 'SystemConfiguration'
   end
 
   s.subspec 'NSURLConnection' do |ss|
-    ss.dependency 'AFNetworking/Serialization'
-    ss.dependency 'AFNetworking/Reachability'
-    ss.dependency 'AFNetworking/Security'
+    ss.dependency 'AFNetworking-OpenTable/Serialization'
+    ss.dependency 'AFNetworking-OpenTable/Reachability'
+    ss.dependency 'AFNetworking-OpenTable/Security'
 
-    ss.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
+    ss.source_files = 'AFNetworking-OpenTable/AFURLConnectionOperation.{h,m}', 'AFNetworking-OpenTable/AFHTTPRequestOperation.{h,m}', 'AFNetworking-OpenTable/AFHTTPRequestOperationManager.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
-    ss.dependency 'AFNetworking/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
-    ss.source_files = 'AFNetworking/AFURLSessionManager.{h,m}', 'AFNetworking/AFHTTPSessionManager.{h,m}'
+    ss.source_files = 'AFNetworking-OpenTable/AFURLSessionManager.{h,m}', 'AFNetworking-OpenTable/AFHTTPSessionManager.{h,m}'
   end
 
   s.subspec 'UIKit' do |ss|
     ss.ios.deployment_target = '6.0'
 
-    ss.dependency 'AFNetworking/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
     ss.ios.public_header_files = 'UIKit+AFNetworking/*.h'
     ss.ios.source_files = 'UIKit+AFNetworking'
