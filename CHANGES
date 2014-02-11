@@ -1,3 +1,356 @@
+= 2.0.3 (2013-11-18)
+
+  * Fix a bug where `AFURLConnectionOperation -pause` did not correctly reset
+the state of `AFURLConnectionOperation`, causing the Network Thread to enter
+an infinite loop (Erik Chen)
+
+  * Fix a bug where `AFURLConnectionOperation -cancel` does not set the
+appropriate error on the `NSOperation` (Erik Chen)
+
+  * Fix to post `AFNetworkingTaskDidFinishNotification` only on main queue
+(Jakub Hladik)
+
+  * Fix issue where the query string serialization block was not used (Kevin
+Harwood)
+
+  * Fix project file and repository directory items (Andrew Newdigate)
+
+  * Fix `NSURLSession` subspec (Mattt Thompson)
+
+  * Fix to session task delegate KVO by moving observer removal to
+`-didCompleteWithError:` (Mattt Thompson)
+
+  * Add AFNetworking 1.x behavior for image construction in inflation to
+ensure correct orientation (Mattt Thompson)
+
+  * Add `NSParameterAssert` for internal task constructors in order to catch
+invalid constructions early (Mattt Thompson)
+
+  * Update replacing `NSParameterAssert` with early `nil` return if session
+was unable to create a task (Mattt Thompson)
+
+  * Update `AFHTTPRequestOperationManager` and `AFHTTPSessionManager` to use
+relative `self class` to create class constructor instances (Bogdan
+Poplauschi)
+
+  * Update to break out of loop if output stream does not have space to write
+bytes (Mattt Thompson)
+
+  * Update documentation and README with various fixes (Max Goedjen, Mattt
+Thompson)
+
+  * Remove unnecessary willChangeValueForKey and didChangeValueForKey method
+calls (Mindaugas Vaičiūnas)
+
+  * Remove deletion of all task delegates in
+`URLSessionDidFinishEventsForBackgroundURLSession:` (Jeremy Mailen)
+
+  * Remove empty, unused `else` branch (Luka Bratos)
+
+= 2.0.2 (2013-10-29)
+
+  * Add `UIWebView
+ -loadRequest:MIMEType:textEncodingName:progress:success:failure:` (Mattt
+ Thompson)
+
+  * Fix iOS 6 compatibility in `AFHTTPSessionManager` &
+ `UIProgressView+AFNetworking` (Olivier Halligon, Mattt Thompson)
+
+  * Fix issue writing partial data to output stream (Kyle Fuller)
+
+  * Fix behavior for `nil` response in request operations (Marcelo Fabri)
+
+  * Fix implementation of
+ batchOfRequestOperations:progressBlock:completionBlock: for nil when passed
+ empty operations parameter (Mattt Thompson)
+
+  * Update `AFHTTPSessionManager` to allow `-init` and `initWithConfig:` to
+ work (Ben Scheirman)
+
+  * Update `AFRequestOperation` to default to `AFHTTPResponseSerializer` (Jiri
+ Techet)
+
+  * Update `AFHTTPResponseSerializer` to remove check for nonzero responseData
+ length (Mattt Thompson)
+
+  * Update `NSCoding` methods to use NSStringFromSelector(@selector()) pattern
+ instead of `NSString` literals (Mattt Thompson)
+
+  * Update multipart form stream to set Content-Length after setting request
+ stream (Mattt Thompson)
+
+  * Update documentation with outdated references to `AFHTTPSerializer` (Bruno
+ Koga)
+
+  * Update documentation and README with various fixes (Jon Chambers, Mattt
+ Thompson)
+
+  * Update files to remove executable privilege (Kyle Fuller)
+
+= 2.0.1 (2013-10-10)
+
+ * Fix iOS 6 compatibility (Matt Baker, Mattt Thompson)
+
+ * Fix example applications (Sam Soffes, Kyle Fuller)
+
+ * Fix usage of `NSSearchPathForDirectoriesInDomains` in README (Leo Lou)
+
+ * Fix names of exposed private methods `downloadProgress` and
+`uploadProgress` (Hermes Pique)
+
+ * Fix initial upload/download task progress updates (Vlas Voloshin)
+
+ * Fix podspec to include `AFNetworking.h` `#import` (@haikusw)
+
+ * Fix request serializers to not override existing header field values with
+defaults (Mattt Thompson)
+
+ * Fix unused format string placeholder (Thorsten Lockert)
+
+ * Fix `AFHTTPRequestOperation -initWithCoder:` to call `super` (Josh Avant)
+
+ * Fix `UIProgressView` selector name (Allen Tu)
+
+ * Fix `UIButton` response serializer (Sam Grossberg)
+
+ * Fix `setPinnedCertificates:` and pinned public keys (Kyle Fuller)
+
+ * Fix timing of batched operation completion block (Denys Telezhkin)
+
+ * Fix `GCC_WARN_ABOUT_MISSING_NEWLINE` compiler warning (Chuck Shnider)
+
+ * Fix a format string missing argument issue in tests (Kyle Fuller)
+
+ * Fix location of certificate chain bundle location (Kyle Fuller)
+
+ * Fix memory leaks in AFSecurityPolicyTests (Kyle Fuller)
+
+ * Fix potential concurrency issues in `AFURLSessionManager` by adding locks
+around access to mutiple delegates dictionary (Mattt Thompson)
+
+ * Fix unused variable compiler warnings by wrapping `OSStatus` and
+`NSCAssert` with NS_BLOCK_ASSERTIONS macro (Mattt Thompson)
+
+ * Fix compound serializer error handling (Mattt Thompson)
+
+ * Fix string encoding for responseString (Juan Enrique)
+
+ * Fix `UIImageView -setBackgroundImageWithRequest:` (Taichiro Yoshida)
+
+ * Fix regressions nested multipart parameters (Mattt Thompson)
+
+ * Add `responseObject` property to `AFHTTPRequestOperation` (Mattt Thompson)
+
+ * Add support for automatic network reachability monitoring for request
+operation and session managers (Mattt Thompson)
+
+ * Update documentation and README with various corrections and fixes
+(@haikusw, Chris Hellmuth, Dave Caunt, Mattt Thompson)
+
+ * Update default User-Agent such that only ASCII character set is used
+(Maximillian Dornseif)
+
+ * Update SSL pinning mode to have default pinned certificates by default
+(Kevin Harwood)
+
+ * Update `AFSecurityPolicy` to use default authentication handling unless a
+credential exists for the server trust (Mattt Thompson)
+
+ * Update Prefix.pch (Steven Fisher)
+
+ * Update minimum iOS test target to iOS 6
+
+ * Remove unused protection space block type (Kyle Fuller)
+
+ * Remove unnecessary Podfile.lock (Kyle Fuller)
+
+= 2.0.0 (2013-09-27)
+
+= 1.3.3 (2013-09-25)
+
+ * Add stream error handling to `AFMultipartBodyStream` (Nicolas Bachschmidt,
+Mattt Thompson)
+
+ * Add stream error handling to `AFURLConnectionOperation
+-connection:didReceiveData:` (Ian Duggan, Mattt Thompson)
+
+ * Fix parameter query string encoding of square brackets according to RFC
+3986 (Kra Larivain)
+
+ * Fix AFHTTPBodyPart determination of end of input stream data (Brian Croom)
+
+ * Fix unit test timeouts (Carson McDonald)
+
+ * Fix truncated `User-Agent` header field when app contained non-ASCII
+characters (Diego Torres)
+
+ * Fix outdated link in documentation (Jonas Schmid)
+
+ * Fix `AFHTTPRequestOperation` `HTTPError` property to be thread-safe
+(Oliver Letterer, Mattt Thompson)
+
+ * Fix API compatibility with iOS 5 (Blake Watters, Mattt Thompson)
+
+ * Fix potential race condition in `AFURLConnectionOperation
+-cancelConnection` (@mm-jkolb, Mattt Thompson)
+
+ * Remove implementation of `connection:needNewBodyStream:` delegate method
+in `AFURLConnectionOperation`, which fixes stream errors on authentication
+challenges (Mattt Thompson)
+
+ * Fix calculation of network reachability from flags (Tracy Pesin, Mattt
+Thompson)
+
+ * Update AFHTTPClient documentation to clarify scope of `parameterEncoding`
+property (Thomas Catterall)
+
+ * Update `UIImageView` category to allow for nested calls to
+`setImageWithURLRequest:` (Philippe Converset)
+
+  * Change `UIImageView` category to accept invalid SSL certificates when
+`_AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES_` is defined (Flávio Caetano)
+
+ * Change to replace #pragma clang with cast (Cédric Luthi)
+
+= 1.3.2 (2013-08-08)
+
+ * Add return status checks when building list of pinned public keys (Sylvain
+Guillope)
+
+ * Add return status checks when handling connection authentication challenges
+(Sylvain Guillope)
+
+ * Add tests around `AFHTTPClient initWithBaseURL:` (Kyle Fuller)
+
+ * Change to remove all `_AFNETWORKING_PIN_SSL_CERTIFICATES_` conditional
+compilation (Dustin Barker)
+
+ * Change to allow fallback to generic image loading when PNG/JPEG data
+provider methods fail (Darryl H. Thomas)
+
+ * Change to only set placeholder image if not `nil` (Mattt Thompson)
+
+ * Change to use `response.MIMEType` rather than (potentially nonexistent)
+Content-Type headers to determine image data provider (Mattt Thompson)
+
+ * Fix image request test endpoint (Carson McDonald)
+
+ * Fix compiler warning caused by `size_t` value defaulted to `NULL` (Darryl H.
+Thomas)
+
+ * Fix mutable headers property in `AFHTTPClient -copyWithZone:` (Oliver
+Letterer)
+
+ * Fix documentation and asset references in README (Romain Pouclet, Peter
+Goldsmith)
+
+ * Fix bug in examples always using `AFSSLPinningModeNone` (Dustin Barker)
+
+ * Fix execution of tests under Travis (Blake Watters)
+
+ * Fix static analyzer warnings about CFRelease calls to NULL pointer (Mattt
+Thompson)
+
+ * Change to return early in `AFGetMediaTypeAndSubtypeWithString` if string is
+`nil` (Mattt Thompson)
+
+ * Change to opimize network thread creation (Mattt Thompson)
+
+= 1.3.1 (2013-06-18)
+
+ * Add `automaticallyInflatesResponseImage` property to
+`AFImageRequestOperation`, which when enabled, offers significant performance
+improvements for drawing images loaded through `UIImageView+AFNetworking` by
+inflating compressed image data in the background (Mattt Thompson, Peter
+Steinberger)
+
+ * Add `NSParameterAssert` check for `nil` `urlRequest` parameter in
+`AFURLConnectionOperation` initializer (Kyle Fuller)
+
+ * Fix reachability to detect the case where a connection is required but can
+be automatically established (Joshua Vickery)
+
+ * Fix to Test target Podfile (Kyle Fuller)
+
+= 1.3.0 (2013-06-01)
+
+ * Change in `AFURLConnectionOperation` `NSURLConnection` authentication
+delegate methods and associated block setters. If
+`_AFNETWORKING_PIN_SSL_CERTIFICATES_` is defined,
+`-setWillSendRequestForAuthenticationChallengeBlock:` will be available, and
+`-connection:willSendRequestForAuthenticationChallenge:` will be implemented.
+Otherwise, `-setAuthenticationAgainstProtectionSpaceBlock:` &
+`-setAuthenticationChallengeBlock:` will be available, and
+`-connection:canAuthenticateAgainstProtectionSpace:` &
+`-connection:didReceiveAuthenticationChallenge:` will be implemented instead
+(Oliver Letterer)
+
+ * Change in AFNetworking podspec to include Security framework (Kevin Harwood,
+Oliver Letterer, Sam Soffes)
+
+ * Change in AFHTTPClient to @throw exception when non-designated intializer is
+used (Kyle Fuller)
+
+ * Change in behavior of connection:didReceiveAuthenticationChallenge: to not
+use URL-encoded credentials, which should already have been applied (@xjdrew)
+
+ * Change to set AFJSONRequestOperation error when unable to decode response
+string (Chris Pickslay, Geoff Nix)
+
+ * Change AFURLConnectionOperation to lazily initialize outputStream property
+(@fumoboy007)
+
+ * Change instances of (CFStringRef)NSRunLoopCommonModes to
+kCFRunLoopCommonModes
+
+ * Change #warning to #pragma message for dynamic framework linking warnings
+(@michael_r_may)
+
+ * Add unit testing and continuous integration system (Blake Watters, Oliver
+Letterer, Kevin Harwood, Cédric Luthi, Adam Fraser, Carson McDonald, Mattt
+Thompson)
+
+ * Fix multipart input stream implementation (Blake Watters, OliverLetterer,
+Aleksey Kononov, @mattyohe, @mythodeia, @JD-)
+
+ * Fix implementation of authentication delegate methods (Oliver Letterer,
+Kevin Harwood)
+
+ * Fix implementation of AFSSLPinningModePublicKey on Mac OS X (Oliver Letterer)
+
+ * Fix error caused by loading file:// requests with AFHTTPRequestOperation
+subclasses (Dave Anderson, Oliver Letterer)
+
+ * Fix threading-related crash in AFNetworkActivityIndicatorManager (Dave Keck)
+
+ * Fix to suppress GNU expression and enum assignment warnings from Clang
+(Henrik Hartz)
+
+ * Fix leak caused by CFStringConvertEncodingToIANACharSetName in AFHTTPClient
+-requestWithMethod:path:parameters: (Daniel Demiss)
+
+ * Fix missing __bridge casts in AFHTTPClient (@apouche, Mattt Thompson)
+
+ * Fix Objective-C++ compatibility (Audun Holm Ellertsen)
+
+ * Fix to not escape tildes (@joein3d)
+
+ * Fix warnings caused by unsynthesized properties (Jeff Hunter)
+
+ * Fix to network reachability calls to provide correct  status on
+initialization (@djmadcat, Mattt Thompson)
+
+ * Fix to suppress warnings about implicit signedness conversion (Matt Rubin)
+
+ * Fix AFJSONRequestOperation -responseJSON failing cases (Andrew Vyazovoy,
+Mattt Thompson)
+
+ * Fix use of object subscripting to avoid incompatibility with iOS < 6 and OS
+X < 10.8 (Paul Melnikow)
+
+ * Various fixes to reverted multipart stream provider implementation (Yaron
+Inger, Alex Burgel)
+
 = 1.2.1 (2013-04-18)
 
  * Add `allowsInvalidSSLCertificate` property to `AFURLConnectionOperation` and
@@ -652,7 +1005,8 @@ where % is used as a literal rather than as part of a percent escape code
  -multipartFormRequestWithMethod:path:parameters:constructing BodyWithBlock:`
  (Ray Morgan, Mattt Thompson, Sam Soffes)
 
- * Fix "File Upload with Progress Callback" code snippet in README (Larry Legend)
+ * Fix "File Upload with Progress Callback" code snippet in README (Larry
+Legend)
 
  * Fix to SBJSON invocations in `AFJSONEncode` and `AFJSONDecode` (Matthias
  Tretter, James Frye)

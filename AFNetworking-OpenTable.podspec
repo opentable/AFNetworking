@@ -1,5 +1,4 @@
-
-version = "1.2.4"
+version = "2.1.0"
 
 Pod::Spec.new do |s|
   s.name     = 'AFNetworking-OpenTable'
@@ -12,25 +11,54 @@ Pod::Spec.new do |s|
   s.source_files = 'AFNetworking'
   s.requires_arc = true
 
-  s.ios.deployment_target = '5.0'
-  s.ios.frameworks = 'MobileCoreServices', 'SystemConfiguration', 'Security'
+  s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.8'
 
-  s.osx.deployment_target = '10.7'
-  s.osx.frameworks = 'CoreServices', 'SystemConfiguration', 'Security'
+  s.public_header_files = 'AFNetworking/*.h'
+  s.source_files = 'AFNetworking/AFNetworking.h'
 
-  s.header_dir = 'AFNetworking'
-
-  s.prefix_header_contents = <<-EOS
-#import <Availability.h>
-
+# remove?
 #define _AFNETWORKING_PIN_SSL_CERTIFICATES_
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED
-  #import <SystemConfiguration/SystemConfiguration.h>
-  #import <MobileCoreServices/MobileCoreServices.h>
-#else
-  #import <SystemConfiguration/SystemConfiguration.h>
-  #import <CoreServices/CoreServices.h>
-#endif
+  s.subspec 'Serialization' do |ss|
+    ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
+    ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
+    ss.osx.frameworks = 'CoreServices'
+  end
+
+  s.subspec 'Security' do |ss|
+    ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
+    ss.frameworks = 'Security'
+  end
+
+  s.subspec 'Reachability' do |ss|
+    ss.source_files = 'AFNetworking/AFNetworkReachabilityManager.{h,m}'
+    ss.frameworks = 'SystemConfiguration'
+  end
+
+  s.subspec 'NSURLConnection' do |ss|
+    ss.dependency 'AFNetworking/Serialization'
+    ss.dependency 'AFNetworking/Reachability'
+    ss.dependency 'AFNetworking/Security'
+
+    ss.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
+  end
+
+  s.subspec 'NSURLSession' do |ss|
+    ss.dependency 'AFNetworking/NSURLConnection'
+
+    ss.source_files = 'AFNetworking/AFURLSessionManager.{h,m}', 'AFNetworking/AFHTTPSessionManager.{h,m}'
+  end
+
+  s.subspec 'UIKit' do |ss|
+    ss.ios.deployment_target = '6.0'
+
+    ss.dependency 'AFNetworking/NSURLConnection'
+
+    ss.ios.public_header_files = 'UIKit+AFNetworking/*.h'
+    ss.ios.source_files = 'UIKit+AFNetworking'
+    ss.osx.source_files = ''
+  end
+
 EOS
 end
