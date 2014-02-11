@@ -59,6 +59,4 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'UIKit+AFNetworking'
     ss.osx.source_files = ''
   end
-
-EOS
 end
