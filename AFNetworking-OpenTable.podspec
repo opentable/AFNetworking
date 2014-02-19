@@ -42,15 +42,15 @@ EOS
   end
 
   s.subspec 'NSURLConnection' do |ss|
-    ss.dependency 'AFNetworking/Serialization'
-    ss.dependency 'AFNetworking/Reachability'
-    ss.dependency 'AFNetworking/Security'
+    ss.dependency 'AFNetworking-OpenTable/Serialization'
+    ss.dependency 'AFNetworking-OpenTable/Reachability'
+    ss.dependency 'AFNetworking-OpenTable/Security'
 
     ss.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
-    ss.dependency 'AFNetworking/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
     ss.source_files = 'AFNetworking/AFURLSessionManager.{h,m}', 'AFNetworking/AFHTTPSessionManager.{h,m}'
   end
@@ -58,7 +58,7 @@ EOS
   s.subspec 'UIKit' do |ss|
     ss.ios.deployment_target = '6.0'
 
-    ss.dependency 'AFNetworking/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
     ss.ios.public_header_files = 'UIKit+AFNetworking/*.h'
     ss.ios.source_files = 'UIKit+AFNetworking'
