@@ -16,8 +16,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'AFNetworking/*.h'
   s.source_files = 'AFNetworking/AFNetworking.h'
 
-  s.header_dir = 'AFNetworking'
-
   s.prefix_header_contents = <<-EOS
 #import <Availability.h>
 
