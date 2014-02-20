@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   s.public_header_files = 'AFNetworking/*.h'
   s.source_files = 'AFNetworking/AFNetworking.h'
 
-  s.prefix_header_contents = <<-EOS
+#  s.prefix_header_contents = <<-EOS
 #import <Availability.h>
-
-#define _AFNETWORKING_PIN_SSL_CERTIFICATES_
-EOS
+#
+##define _AFNETWORKING_PIN_SSL_CERTIFICATES_
+#EOS
 
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
