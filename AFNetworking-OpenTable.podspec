@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.summary  = 'A delightful iOS and OS X networking framework.'
   s.homepage = 'https://github.com/AFNetworking/AFNetworking'
   s.authors  = { 'Mattt Thompson' => 'm@mattt.me', 'Scott Raymond' => 'sco@gowalla.com' }
-  s.source   = { :git => 'https://github.com/opentable/AFNetworking.git', :tag => "#{version}-OpenTable" }
-  s.source_files = 'AFNetworking'
+  s.source   = { :git => 'https://github.com/opentable/AFNetworking.git', :tag => "#{version}-OpenTable", :submodules => true }
   s.requires_arc = true
 
   s.ios.deployment_target = '6.0'
