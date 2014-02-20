@@ -14,7 +14,10 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.public_header_files = 'AFNetworking/*.h'
-  s.source_files = 'AFNetworking/AFNetworking.h'
+#  s.source_files = 'AFNetworking/AFNetworking.h'
+  s.source_files = 'AFNetworking/*.{h,m}'
+
+  s.header_dir = 'AFNetworking'
 
 #  s.prefix_header_contents = <<-EOS
 #import <Availability.h>
