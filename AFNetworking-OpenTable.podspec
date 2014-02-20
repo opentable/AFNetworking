@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.public_header_files = 'AFNetworking/*.h'
   s.source_files = 'AFNetworking/AFNetworking.h'
 
-# remove?
-#define _AFNETWORKING_PIN_SSL_CERTIFICATES_
+   # so that we don't need to reference "AFNetworking-OpenTable" when importing libraries
+  s.header_dir = 'AFNetworking'
 
   s.subspec 'Serialization' do |ss|
     ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
