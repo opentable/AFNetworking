@@ -23,13 +23,13 @@ Pod::Spec.new do |s|
 EOS
 
   s.subspec 'Serialization' do |ss|
-    ss.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
+    ss.ios.source_files = 'AFNetworking/AFURL{Request,Response}Serialization.{h,m}'
     ss.ios.frameworks = 'MobileCoreServices', 'CoreGraphics'
     ss.osx.frameworks = 'CoreServices'
   end
 
   s.subspec 'Security' do |ss|
-    ss.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
+    ss.ios.source_files = 'AFNetworking/AFSecurityPolicy.{h,m}'
     ss.frameworks = 'Security'
   end
 
@@ -43,13 +43,13 @@ EOS
     ss.dependency 'AFNetworking-OpenTable/Reachability'
     ss.dependency 'AFNetworking-OpenTable/Security'
 
-    ss.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
+    ss.ios.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
     ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
-    ss.source_files = 'AFNetworking/AFURLSessionManager.{h,m}', 'AFNetworking/AFHTTPSessionManager.{h,m}'
+    ss.ios.source_files = 'AFNetworking/AFURLSessionManager.{h,m}', 'AFNetworking/AFHTTPSessionManager.{h,m}'
   end
 
   s.subspec 'UIKit' do |ss|
