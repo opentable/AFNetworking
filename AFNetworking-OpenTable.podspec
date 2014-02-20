@@ -14,10 +14,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.public_header_files = 'AFNetworking/*.h'
-  
-  # testing getting all source files instead of relying on subspecs...
-  #s.source_files = 'AFNetworking/AFNetworking.h'
-  s.source_files = 'AFNetworking'
+  s.source_files = 'AFNetworking/AFNetworking.h'
 
   # so that we don't need to reference "AFNetworking-OpenTable" when importing libraries
   s.header_dir = 'AFNetworking'
