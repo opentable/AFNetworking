@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source_files = 'AFNetworking'
   s.requires_arc = true
 
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.8'
 
   s.public_header_files = 'AFNetworking/*.h'
@@ -54,6 +54,7 @@ Pod::Spec.new do |s|
     ss.ios.deployment_target = '6.0'
 
     ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLSession'
 
     ss.ios.public_header_files = 'UIKit+AFNetworking/*.h'
     ss.ios.source_files = 'UIKit+AFNetworking'
