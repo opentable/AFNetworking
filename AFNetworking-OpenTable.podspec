@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license  = 'MIT'
   s.summary  = 'A delightful iOS and OS X networking framework.'
   s.homepage = 'https://github.com/AFNetworking/AFNetworking'
-  s.authors  = { 'Mattt Thompson' => 'm@mattt.me', 'Scott Raymond' => 'sco@gowalla.com' }
+  s.authors  = { 'Mattt Thompson' => 'm@mattt.me' }
   s.source   = { :git => 'https://github.com/opentable/AFNetworking.git', :tag => "#{version}-OpenTable" }
   s.source_files = 'AFNetworking'
   s.requires_arc = true
@@ -37,15 +37,15 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'NSURLConnection' do |ss|
-    ss.dependency 'AFNetworking/Serialization'
-    ss.dependency 'AFNetworking/Reachability'
-    ss.dependency 'AFNetworking/Security'
+    ss.dependency 'AFNetworking-OpenTable/Serialization'
+    ss.dependency 'AFNetworking-OpenTable/Reachability'
+    ss.dependency 'AFNetworking-OpenTable/Security'
 
     ss.source_files = 'AFNetworking/AFURLConnectionOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperation.{h,m}', 'AFNetworking/AFHTTPRequestOperationManager.{h,m}'
   end
 
   s.subspec 'NSURLSession' do |ss|
-    ss.dependency 'AFNetworking/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
     ss.source_files = 'AFNetworking/AFURLSessionManager.{h,m}', 'AFNetworking/AFHTTPSessionManager.{h,m}'
   end
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
   s.subspec 'UIKit' do |ss|
     ss.ios.deployment_target = '6.0'
 
-    ss.dependency 'AFNetworking/NSURLConnection'
+    ss.dependency 'AFNetworking-OpenTable/NSURLConnection'
 
     ss.ios.public_header_files = 'UIKit+AFNetworking/*.h'
     ss.ios.source_files = 'UIKit+AFNetworking'
