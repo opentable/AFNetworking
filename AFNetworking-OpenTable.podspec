@@ -1,4 +1,4 @@
-version = '2.4.2'
+version = '2.4.3'
 
 Pod::Spec.new do |s|
   s.name     = 'AFNetworking-OpenTable'
