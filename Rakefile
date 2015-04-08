@@ -11,6 +11,7 @@ builder = XcodeBuilder::XcodeBuilder.new do |config|
 		config.tag_vcs = true
 		config.package_destination_path = "./pkg/"
 		config.pod_repo = "OpenTable"
+		config.pod_repo_sources = "git@github.com:opentable/Specs.git"
 		config.podspec_file = "AFNetworking-OpenTable.podspec"
 
 		# tag and release with git
