@@ -25,7 +25,7 @@
 #import "AFURLResponseSerialization.h"
 #import "AFURLRequestSerialization.h"
 #import "AFSecurityPolicy.h"
-#import "AFNetworkReachabilityManager.h"
+//#import "AFNetworkReachabilityManager.h"
 
 #ifndef NS_DESIGNATED_INITIALIZER
 #if __has_attribute(objc_designated_initializer)
@@ -127,7 +127,7 @@
 /**
  The network reachability manager. `AFURLSessionManager` uses the `sharedManager` by default.
  */
-@property (readwrite, nonatomic, strong) AFNetworkReachabilityManager *reachabilityManager;
+//@property (readwrite, nonatomic, strong) AFNetworkReachabilityManager *reachabilityManager;
 
 ///----------------------------
 /// @name Getting Session Tasks

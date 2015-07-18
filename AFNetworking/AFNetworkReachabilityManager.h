@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import <Foundation/Foundation.h>
-#import <SystemConfiguration/SystemConfiguration.h>
+//#import <SystemConfiguration/SystemConfiguration.h>
 
 #ifndef NS_DESIGNATED_INITIALIZER
 #if __has_attribute(objc_designated_initializer)
@@ -103,7 +103,7 @@ typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
 
  @return An initialized network reachability manager, actively monitoring the specified reachability.
  */
-- (instancetype)initWithReachability:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
+//- (instancetype)initWithReachability:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
 
 ///--------------------------------------------------
 /// @name Starting & Stopping Reachability Monitoring
