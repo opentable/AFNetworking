@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00BB4DA21B5AE22B0039D377 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D41A88C380008EF006 /* AFURLSessionManager.m */; };
-		00BB4DA31B5AE22B0039D377 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C71A88C380008EF006 /* AFHTTPSessionManager.m */; };
-		00BB4DA41B5AE22B0039D377 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4CC1A88C380008EF006 /* AFSecurityPolicy.m */; };
-		00BB4DA51B5AE22B0039D377 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C51A88C380008EF006 /* AFHTTPRequestOperationManager.m */; };
-		00BB4DA61B5AE22B0039D377 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4CE1A88C380008EF006 /* AFURLConnectionOperation.m */; };
-		00BB4DA71B5AE22B0039D377 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D01A88C380008EF006 /* AFURLRequestSerialization.m */; };
-		00BB4DA81B5AE22B0039D377 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D21A88C380008EF006 /* AFURLResponseSerialization.m */; };
-		00BB4DA91B5AE22B0039D377 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C31A88C380008EF006 /* AFHTTPRequestOperation.m */; };
-		00BB4DAC1B5AE22B0039D377 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D31A88C380008EF006 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DAD1B5AE22B0039D377 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CF1A88C380008EF006 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DAE1B5AE22B0039D377 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DAF1B5AE22B0039D377 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DB01B5AE22B0039D377 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C61A88C380008EF006 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DB11B5AE22B0039D377 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CD1A88C380008EF006 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DB21B5AE22B0039D377 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CB1A88C380008EF006 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DB31B5AE22B0039D377 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C41A88C380008EF006 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00BB4DB41B5AE22B0039D377 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D11A88C380008EF006 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DC81B5AE6600039D377 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C31A88C380008EF006 /* AFHTTPRequestOperation.m */; };
+		00BB4DC91B5AE6600039D377 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C51A88C380008EF006 /* AFHTTPRequestOperationManager.m */; };
+		00BB4DCA1B5AE6600039D377 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C71A88C380008EF006 /* AFHTTPSessionManager.m */; };
+		00BB4DCB1B5AE6600039D377 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4CC1A88C380008EF006 /* AFSecurityPolicy.m */; };
+		00BB4DCC1B5AE6600039D377 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4CE1A88C380008EF006 /* AFURLConnectionOperation.m */; };
+		00BB4DCD1B5AE6600039D377 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D01A88C380008EF006 /* AFURLRequestSerialization.m */; };
+		00BB4DCE1B5AE6600039D377 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D21A88C380008EF006 /* AFURLResponseSerialization.m */; };
+		00BB4DCF1B5AE6600039D377 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D41A88C380008EF006 /* AFURLSessionManager.m */; };
+		00BB4DD01B5AE6740039D377 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; };
+		00BB4DD11B5AE6740039D377 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C41A88C380008EF006 /* AFHTTPRequestOperationManager.h */; };
+		00BB4DD21B5AE6740039D377 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C61A88C380008EF006 /* AFHTTPSessionManager.h */; };
+		00BB4DD31B5AE6740039D377 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C81A88C380008EF006 /* AFNetworking.h */; };
+		00BB4DD41B5AE6740039D377 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CB1A88C380008EF006 /* AFSecurityPolicy.h */; };
+		00BB4DD51B5AE6740039D377 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CD1A88C380008EF006 /* AFURLConnectionOperation.h */; };
+		00BB4DD61B5AE6740039D377 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CF1A88C380008EF006 /* AFURLRequestSerialization.h */; };
+		00BB4DD71B5AE6740039D377 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D11A88C380008EF006 /* AFURLResponseSerialization.h */; };
+		00BB4DD81B5AE6740039D377 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D31A88C380008EF006 /* AFURLSessionManager.h */; };
+		00BB4DD91B5AE6740039D377 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworking.h */; };
 		9A84D48D1A88C1E7008EF006 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D51A88C380008EF006 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D71A88C380008EF006 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C31A88C380008EF006 /* AFHTTPRequestOperation.m */; };
@@ -44,8 +45,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00BB4DB91B5AE22B0039D377 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00BB4DBA1B5AE22B0039D377 /* AFNetworkingiOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AFNetworkingiOS copy-Info.plist"; path = "/Users/olarivain/Development/iOS/third-party/AFNetworking/AFNetworkingLib/AFNetworkingiOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		00BB4DC01B5AE6300039D377 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00BB4DC21B5AE6300039D377 /* wut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wut.h; sourceTree = "<group>"; };
+		00BB4DC41B5AE6300039D377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CEF2FA31ACB71EA003E8F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CEF2FCC1ACB720E003E8F61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A84D4871A88C1E7008EF006 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +111,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00BB4DAA1B5AE22B0039D377 /* Frameworks */ = {
+		00BB4DBC1B5AE6300039D377 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00BB4DC11B5AE6300039D377 /* wut */ = {
+			isa = PBXGroup;
+			children = (
+				00BB4DC21B5AE6300039D377 /* wut.h */,
+				00BB4DC41B5AE6300039D377 /* Info.plist */,
+			);
+			path = wut;
+			sourceTree = "<group>";
+		};
 		5CEF2FA11ACB71EA003E8F61 /* AFNetworkActivityLoggeriOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +182,7 @@
 				9A84D4A91A88C20D008EF006 /* AFNetworkingOSX */,
 				5CEF2FA11ACB71EA003E8F61 /* AFNetworkActivityLoggeriOS */,
 				5CEF2FCA1ACB720E003E8F61 /* AFNetworkActivityLoggerOSX */,
+				00BB4DC11B5AE6300039D377 /* wut */,
 				9A84D4881A88C1E7008EF006 /* Products */,
 				00BB4DBA1B5AE22B0039D377 /* AFNetworkingiOS copy-Info.plist */,
 			);
@@ -179,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9A84D4871A88C1E7008EF006 /* AFNetworking.framework */,
-				00BB4DB91B5AE22B0039D377 /* AFNetworking.framework */,
+				00BB4DC01B5AE6300039D377 /* AFNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,19 +356,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00BB4DAB1B5AE22B0039D377 /* Headers */ = {
+		00BB4DBD1B5AE6300039D377 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00BB4DAC1B5AE22B0039D377 /* AFURLSessionManager.h in Headers */,
-				00BB4DAD1B5AE22B0039D377 /* AFURLRequestSerialization.h in Headers */,
-				00BB4DAE1B5AE22B0039D377 /* AFNetworking.h in Headers */,
-				00BB4DAF1B5AE22B0039D377 /* AFHTTPRequestOperation.h in Headers */,
-				00BB4DB01B5AE22B0039D377 /* AFHTTPSessionManager.h in Headers */,
-				00BB4DB11B5AE22B0039D377 /* AFURLConnectionOperation.h in Headers */,
-				00BB4DB21B5AE22B0039D377 /* AFSecurityPolicy.h in Headers */,
-				00BB4DB31B5AE22B0039D377 /* AFHTTPRequestOperationManager.h in Headers */,
-				00BB4DB41B5AE22B0039D377 /* AFURLResponseSerialization.h in Headers */,
+				00BB4DD01B5AE6740039D377 /* AFHTTPRequestOperation.h in Headers */,
+				00BB4DD11B5AE6740039D377 /* AFHTTPRequestOperationManager.h in Headers */,
+				00BB4DD21B5AE6740039D377 /* AFHTTPSessionManager.h in Headers */,
+				00BB4DD31B5AE6740039D377 /* AFNetworking.h in Headers */,
+				00BB4DD41B5AE6740039D377 /* AFSecurityPolicy.h in Headers */,
+				00BB4DD51B5AE6740039D377 /* AFURLConnectionOperation.h in Headers */,
+				00BB4DD61B5AE6740039D377 /* AFURLRequestSerialization.h in Headers */,
+				00BB4DD71B5AE6740039D377 /* AFURLResponseSerialization.h in Headers */,
+				00BB4DD81B5AE6740039D377 /* AFURLSessionManager.h in Headers */,
+				00BB4DD91B5AE6740039D377 /* AFNetworking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,22 +392,22 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00BB4DA01B5AE22B0039D377 /* AFNetworkingWatch */ = {
+		00BB4DBF1B5AE6300039D377 /* AFNetworkingWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00BB4DB61B5AE22B0039D377 /* Build configuration list for PBXNativeTarget "AFNetworkingWatch" */;
+			buildConfigurationList = 00BB4DC51B5AE6300039D377 /* Build configuration list for PBXNativeTarget "AFNetworkingWatch" */;
 			buildPhases = (
-				00BB4DA11B5AE22B0039D377 /* Sources */,
-				00BB4DAA1B5AE22B0039D377 /* Frameworks */,
-				00BB4DAB1B5AE22B0039D377 /* Headers */,
-				00BB4DB51B5AE22B0039D377 /* Resources */,
+				00BB4DBB1B5AE6300039D377 /* Sources */,
+				00BB4DBC1B5AE6300039D377 /* Frameworks */,
+				00BB4DBD1B5AE6300039D377 /* Headers */,
+				00BB4DBE1B5AE6300039D377 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AFNetworkingWatch;
-			productName = AFNetworkingLib;
-			productReference = 00BB4DB91B5AE22B0039D377 /* AFNetworking.framework */;
+			productName = wut;
+			productReference = 00BB4DC01B5AE6300039D377 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A84D4861A88C1E7008EF006 /* AFNetworkingiOS */ = {
@@ -423,6 +437,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Alamofire;
 				TargetAttributes = {
+					00BB4DBF1B5AE6300039D377 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					9A84D4861A88C1E7008EF006 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -441,13 +458,13 @@
 			projectRoot = "";
 			targets = (
 				9A84D4861A88C1E7008EF006 /* AFNetworkingiOS */,
-				00BB4DA01B5AE22B0039D377 /* AFNetworkingWatch */,
+				00BB4DBF1B5AE6300039D377 /* AFNetworkingWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00BB4DB51B5AE22B0039D377 /* Resources */ = {
+		00BB4DBE1B5AE6300039D377 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -464,18 +481,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00BB4DA11B5AE22B0039D377 /* Sources */ = {
+		00BB4DBB1B5AE6300039D377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00BB4DA21B5AE22B0039D377 /* AFURLSessionManager.m in Sources */,
-				00BB4DA31B5AE22B0039D377 /* AFHTTPSessionManager.m in Sources */,
-				00BB4DA41B5AE22B0039D377 /* AFSecurityPolicy.m in Sources */,
-				00BB4DA51B5AE22B0039D377 /* AFHTTPRequestOperationManager.m in Sources */,
-				00BB4DA61B5AE22B0039D377 /* AFURLConnectionOperation.m in Sources */,
-				00BB4DA71B5AE22B0039D377 /* AFURLRequestSerialization.m in Sources */,
-				00BB4DA81B5AE22B0039D377 /* AFURLResponseSerialization.m in Sources */,
-				00BB4DA91B5AE22B0039D377 /* AFHTTPRequestOperation.m in Sources */,
+				00BB4DC81B5AE6600039D377 /* AFHTTPRequestOperation.m in Sources */,
+				00BB4DC91B5AE6600039D377 /* AFHTTPRequestOperationManager.m in Sources */,
+				00BB4DCA1B5AE6600039D377 /* AFHTTPSessionManager.m in Sources */,
+				00BB4DCB1B5AE6600039D377 /* AFSecurityPolicy.m in Sources */,
+				00BB4DCC1B5AE6600039D377 /* AFURLConnectionOperation.m in Sources */,
+				00BB4DCD1B5AE6600039D377 /* AFURLRequestSerialization.m in Sources */,
+				00BB4DCE1B5AE6600039D377 /* AFURLResponseSerialization.m in Sources */,
+				00BB4DCF1B5AE6600039D377 /* AFURLSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,38 +514,47 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		00BB4DB71B5AE22B0039D377 /* Debug */ = {
+		00BB4DC61B5AE6300039D377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "AFNetworkingiOS copy-Info.plist";
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = wut/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.wut;
 				PRODUCT_NAME = AFNetworking;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		00BB4DB81B5AE22B0039D377 /* Release */ = {
+		00BB4DC71B5AE6300039D377 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "AFNetworkingiOS copy-Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = wut/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentable.wut;
 				PRODUCT_NAME = AFNetworking;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -650,14 +676,13 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00BB4DB61B5AE22B0039D377 /* Build configuration list for PBXNativeTarget "AFNetworkingWatch" */ = {
+		00BB4DC51B5AE6300039D377 /* Build configuration list for PBXNativeTarget "AFNetworkingWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00BB4DB71B5AE22B0039D377 /* Debug */,
-				00BB4DB81B5AE22B0039D377 /* Release */,
+				00BB4DC61B5AE6300039D377 /* Debug */,
+				00BB4DC71B5AE6300039D377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		9A84D4811A88C1E7008EF006 /* Build configuration list for PBXProject "AFNetworkingLib" */ = {
 			isa = XCConfigurationList;

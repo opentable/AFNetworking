@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00BB4DA01B5AE22B0039D377"
+               BlueprintIdentifier = "00BB4DBF1B5AE6300039D377"
                BuildableName = "AFNetworkingWatch.framework"
                BlueprintName = "AFNetworkingWatch"
                ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "00BB4DA01B5AE22B0039D377"
+            BlueprintIdentifier = "00BB4DBF1B5AE6300039D377"
             BuildableName = "AFNetworkingWatch.framework"
             BlueprintName = "AFNetworkingWatch"
             ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "00BB4DA01B5AE22B0039D377"
+            BlueprintIdentifier = "00BB4DBF1B5AE6300039D377"
             BuildableName = "AFNetworkingWatch.framework"
             BlueprintName = "AFNetworkingWatch"
             ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
