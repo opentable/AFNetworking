@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import "AFURLConnectionOperation.h"
-
+#define AF_APP_EXTENSIONS
 #if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 #import <UIKit/UIKit.h>
 #endif

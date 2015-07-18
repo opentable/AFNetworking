@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A84D4861A88C1E7008EF006"
-               BuildableName = "AFNetworking.framework"
-               BlueprintName = "AFNetworkingiOS"
-               ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A84D4911A88C1E8008EF006"
-               BuildableName = "AFNetworkingiOSTests.xctest"
-               BlueprintName = "AFNetworkingiOSTests"
+               BlueprintIdentifier = "00BB4DA01B5AE22B0039D377"
+               BuildableName = "AFNetworkingWatch.framework"
+               BlueprintName = "AFNetworkingWatch"
                ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A84D4911A88C1E8008EF006"
-               BuildableName = "AFNetworkingiOSTests.xctest"
-               BlueprintName = "AFNetworkingiOSTests"
-               ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A84D4861A88C1E7008EF006"
-            BuildableName = "AFNetworking.framework"
-            BlueprintName = "AFNetworkingiOS"
-            ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -78,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A84D4861A88C1E7008EF006"
-            BuildableName = "AFNetworking.framework"
-            BlueprintName = "AFNetworkingiOS"
+            BlueprintIdentifier = "00BB4DA01B5AE22B0039D377"
+            BuildableName = "AFNetworkingWatch.framework"
+            BlueprintName = "AFNetworkingWatch"
             ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A84D4861A88C1E7008EF006"
-            BuildableName = "AFNetworking.framework"
-            BlueprintName = "AFNetworkingiOS"
+            BlueprintIdentifier = "00BB4DA01B5AE22B0039D377"
+            BuildableName = "AFNetworkingWatch.framework"
+            BlueprintName = "AFNetworkingWatch"
             ReferencedContainer = "container:AFNetworkingLib.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
