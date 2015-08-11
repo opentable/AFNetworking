@@ -15,16 +15,15 @@
 		00BB4DCD1B5AE6600039D377 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D01A88C380008EF006 /* AFURLRequestSerialization.m */; };
 		00BB4DCE1B5AE6600039D377 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D21A88C380008EF006 /* AFURLResponseSerialization.m */; };
 		00BB4DCF1B5AE6600039D377 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4D41A88C380008EF006 /* AFURLSessionManager.m */; };
-		00BB4DD01B5AE6740039D377 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; };
-		00BB4DD11B5AE6740039D377 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C41A88C380008EF006 /* AFHTTPRequestOperationManager.h */; };
-		00BB4DD21B5AE6740039D377 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C61A88C380008EF006 /* AFHTTPSessionManager.h */; };
-		00BB4DD31B5AE6740039D377 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C81A88C380008EF006 /* AFNetworking.h */; };
-		00BB4DD41B5AE6740039D377 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CB1A88C380008EF006 /* AFSecurityPolicy.h */; };
-		00BB4DD51B5AE6740039D377 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CD1A88C380008EF006 /* AFURLConnectionOperation.h */; };
-		00BB4DD61B5AE6740039D377 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CF1A88C380008EF006 /* AFURLRequestSerialization.h */; };
-		00BB4DD71B5AE6740039D377 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D11A88C380008EF006 /* AFURLResponseSerialization.h */; };
-		00BB4DD81B5AE6740039D377 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D31A88C380008EF006 /* AFURLSessionManager.h */; };
-		00BB4DD91B5AE6740039D377 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworking.h */; };
+		00BB4DD01B5AE6740039D377 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD11B5AE6740039D377 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C41A88C380008EF006 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD21B5AE6740039D377 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C61A88C380008EF006 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD41B5AE6740039D377 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CB1A88C380008EF006 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD51B5AE6740039D377 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CD1A88C380008EF006 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD61B5AE6740039D377 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4CF1A88C380008EF006 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD71B5AE6740039D377 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D11A88C380008EF006 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD81B5AE6740039D377 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4D31A88C380008EF006 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00BB4DD91B5AE6740039D377 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D48D1A88C1E7008EF006 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D51A88C380008EF006 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D71A88C380008EF006 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C31A88C380008EF006 /* AFHTTPRequestOperation.m */; };
@@ -363,7 +362,6 @@
 				00BB4DD01B5AE6740039D377 /* AFHTTPRequestOperation.h in Headers */,
 				00BB4DD11B5AE6740039D377 /* AFHTTPRequestOperationManager.h in Headers */,
 				00BB4DD21B5AE6740039D377 /* AFHTTPSessionManager.h in Headers */,
-				00BB4DD31B5AE6740039D377 /* AFNetworking.h in Headers */,
 				00BB4DD41B5AE6740039D377 /* AFSecurityPolicy.h in Headers */,
 				00BB4DD51B5AE6740039D377 /* AFURLConnectionOperation.h in Headers */,
 				00BB4DD61B5AE6740039D377 /* AFURLRequestSerialization.h in Headers */,
@@ -683,6 +681,7 @@
 				00BB4DC71B5AE6300039D377 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A84D4811A88C1E7008EF006 /* Build configuration list for PBXProject "AFNetworkingLib" */ = {
 			isa = XCConfigurationList;
