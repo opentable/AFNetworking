@@ -120,9 +120,17 @@
     if ([[[UIDevice currentDevice] systemVersion] compare:@"8.2" options:NSNumericSearch] == NSOrderedAscending) {
         return [NSURLCache sharedURLCache];
     }
+    
+#if TARGET_OS_UIKITFORMAC
+    NSURL *url = [NSURL URLWithString:@"com.alamofire.imagedownloader"];
+    return [[NSURLCache alloc] initWithMemoryCapacity:20 * 1024 * 1024
+                                         diskCapacity:150 * 1024 * 1024
+                                         directoryURL:url];
+#else
     return [[NSURLCache alloc] initWithMemoryCapacity:20 * 1024 * 1024
                                          diskCapacity:150 * 1024 * 1024
                                              diskPath:@"com.alamofire.imagedownloader"];
+#endif
 }
 
 + (NSURLSessionConfiguration *)defaultURLSessionConfiguration {
